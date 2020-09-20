@@ -16,4 +16,4 @@ MangaMark é um Bookmark de Mangás, que possui uma biblioteca com uma lista de 
 
 ## Diagrama
 
-<img src="https://i.imgur.com/7G9bkVW.png">
+<img src="https://i.imgur.com/7G9bkVW.png" width="700" height="800">
