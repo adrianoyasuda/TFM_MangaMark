@@ -21,6 +21,6 @@
         tools:layout="@layout/fragment_manga" >
         <argument
             android:name="book"
-            app:argType="com.yasuda.tfmmangamark.model.Book" />
+            app:argType="com.yasuda.tfmmangamark.model.Manga" />
     </fragment>
 </navigation>

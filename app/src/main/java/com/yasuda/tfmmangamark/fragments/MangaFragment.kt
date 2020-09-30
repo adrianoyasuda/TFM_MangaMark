@@ -7,12 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import com.yasuda.tfmmangamark.R
 import com.yasuda.tfmmangamark.adapters.ChapterAdapter
 import com.yasuda.tfmmangamark.model.Manga
 import com.yasuda.tfmmangamark.results.GetChaptersResult
 import com.yasuda.tfmmangamark.util.BookServiceGenerator
 import kotlinx.android.synthetic.main.fragment_manga.view.*
+import kotlinx.android.synthetic.main.fragment_manga.view.txt_lbManga_Author
+import kotlinx.android.synthetic.main.fragment_manga.view.txt_lbManga_Title
+import kotlinx.android.synthetic.main.item_manga.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -27,11 +31,13 @@ class MangaFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_manga, container, false)
 
         manga = arguments?.getSerializable("book") as Manga
-        view.lbBookTitle.text = manga.title
-        view.lbBookAuthor.text = manga.author
-        view.lbBookEdition.text = manga.edition.toString()
-        view.lbBookYear.text = manga.year.toString()
-        view.lbBookPublisher.text = manga.publisher
+
+        Picasso.get().load(manga.cover).into(view.img_cover);
+        view.txt_lbManga_Title.text = manga.title
+        view.txt_lbManga_Author.text = manga.author
+        view.txt_lbManga_Edition.text = manga.edition.toString()
+        view.txt_lbManga_Year.text = manga.year.toString()
+        view.txt_lbManga_Publisher.text = manga.publisher
 
         loadChapters()
 

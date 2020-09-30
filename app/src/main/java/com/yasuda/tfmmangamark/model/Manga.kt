@@ -4,6 +4,7 @@ import java.io.Serializable
 
 data class Manga(
     var id: Long,
+    var cover: String,
     var title: String,
     var author: String,
     var publisher: String,
