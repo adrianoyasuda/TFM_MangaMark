@@ -24,6 +24,7 @@
         android:ems="10"
         android:hint="@string/login"
         android:inputType="textPersonName"
+        android:text="Yasuda"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/imageView"
@@ -36,6 +37,7 @@
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:text="123"
         app:layout_constraintEnd_toEndOf="@+id/txt_login"
         app:layout_constraintStart_toStartOf="@+id/txt_login"
         app:layout_constraintTop_toBottomOf="@+id/txt_login" />

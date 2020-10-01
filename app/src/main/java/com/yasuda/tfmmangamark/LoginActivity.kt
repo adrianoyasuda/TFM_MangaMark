@@ -1,9 +1,9 @@
 package com.yasuda.tfmmangamark
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.yasuda.tfmmangamark.model.User
 import com.yasuda.tfmmangamark.util.MangaServiceGenerator
 import kotlinx.android.synthetic.main.activity_login.*
@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    fun verificaLogin(l:String, p:String){
+    fun verificaLogin(l: String, p: String){
         var users = mutableListOf<User>()
         val service = MangaServiceGenerator.getService()
 
@@ -37,11 +37,13 @@ class LoginActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<List<User>>, response: Response<List<User>>) {
                 users = response.body()!!.toMutableList()
-                debug()
                 for (user: User in users) {
                     if (user.login == l) {
                         if (user.password == p) {
-                            pass(user)
+                            pass(user.id)
+                        }
+                        else{
+                            falhalogin()
                         }
                     }
                 }
@@ -53,11 +55,9 @@ class LoginActivity : AppCompatActivity() {
     fun falhalogin(){
         Toast.makeText(applicationContext, "Login ou Senha Invalidos", Toast.LENGTH_LONG).show()
     }
-    fun debug(){
-        Toast.makeText(applicationContext, "Chegou", Toast.LENGTH_LONG).show()
-    }
-    fun pass(user: User){
+    fun pass(id : Long){
         val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("id", id)
         startActivity(intent)
     }
 }

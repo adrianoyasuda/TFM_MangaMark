@@ -17,6 +17,7 @@ import retrofit2.Response
 class MangaAdapter(private val listener: MangaAdapterListener) :
     RecyclerView.Adapter<MangaAdapter.ViewHolder>() {
 
+
     private var books = mutableListOf<Manga>()
     private val service = MangaServiceGenerator.getService()
 

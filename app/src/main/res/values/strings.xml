@@ -4,4 +4,9 @@
     <string name="password">Password</string>
     <string name="please_enter_your_information_to_register">Please Enter Your Information to Register</string>
     <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="list">List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

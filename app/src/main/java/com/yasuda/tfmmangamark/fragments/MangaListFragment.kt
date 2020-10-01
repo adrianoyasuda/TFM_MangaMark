@@ -42,5 +42,4 @@ class MangaListFragment(private val listener: MangaListFragmentListener? = null)
 
         listener?.onBookSelected(manga)
     }
-
 }
