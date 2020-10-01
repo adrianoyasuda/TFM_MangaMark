@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Manga Mark</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="please_enter_your_information_to_register">Please Enter Your Information to Register</string>
+    <string name="register">Register</string>
 </resources>

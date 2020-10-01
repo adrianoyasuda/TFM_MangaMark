@@ -1,10 +1,5 @@
 package com.yasuda.tfmmangamark.adapters
 
-import android.content.res.Resources
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
-import android.graphics.drawable.BitmapDrawable
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,22 +7,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.yasuda.tfmmangamark.R
 import com.yasuda.tfmmangamark.model.Manga
-import com.yasuda.tfmmangamark.util.BookServiceGenerator
+import com.yasuda.tfmmangamark.util.MangaServiceGenerator
 import kotlinx.android.synthetic.main.item_manga.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.IOException
-import java.io.InputStream
-import java.net.HttpURLConnection
-import java.net.URL
 
 
 class MangaAdapter(private val listener: MangaAdapterListener) :
     RecyclerView.Adapter<MangaAdapter.ViewHolder>() {
 
     private var books = mutableListOf<Manga>()
-    private val service = BookServiceGenerator.getService()
+    private val service = MangaServiceGenerator.getService()
 
     init {
         service.getAll().enqueue(object : Callback<List<Manga>> {

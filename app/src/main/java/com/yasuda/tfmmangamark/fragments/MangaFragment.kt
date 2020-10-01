@@ -12,11 +12,10 @@ import com.yasuda.tfmmangamark.R
 import com.yasuda.tfmmangamark.adapters.ChapterAdapter
 import com.yasuda.tfmmangamark.model.Manga
 import com.yasuda.tfmmangamark.results.GetChaptersResult
-import com.yasuda.tfmmangamark.util.BookServiceGenerator
+import com.yasuda.tfmmangamark.util.MangaServiceGenerator
 import kotlinx.android.synthetic.main.fragment_manga.view.*
 import kotlinx.android.synthetic.main.fragment_manga.view.txt_lbManga_Author
 import kotlinx.android.synthetic.main.fragment_manga.view.txt_lbManga_Title
-import kotlinx.android.synthetic.main.item_manga.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -45,7 +44,7 @@ class MangaFragment : Fragment() {
     }
 
     private fun loadChapters() {
-        val service = BookServiceGenerator.getService()
+        val service = MangaServiceGenerator.getService()
         service.getChapters(manga.id).enqueue(object : Callback<GetChaptersResult> {
             override fun onFailure(call: Call<GetChaptersResult>, t: Throwable) {}
 
