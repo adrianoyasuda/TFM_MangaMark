@@ -27,4 +27,7 @@ interface MangaService {
     @POST("users")
     fun insertUser(@Body task: User): Call<User>
 
+    @Headers("Content-Type: Application/json")
+    @PATCH("users/{id}")
+    fun updateUser(@Path("id") id: Long, @Body task : User) : Call<User>
 }

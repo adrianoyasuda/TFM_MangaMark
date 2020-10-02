@@ -1,11 +1,18 @@
 package com.yasuda.tfmmangamark.model
 
-import java.io.Serializable
+import androidx.room.ColumnInfo
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
+@Entity(tableName = "tb_user")
 data class User(
-    var id: Long,
+    @ColumnInfo(name = "login")
     var login: String,
-    var password: String
-): Serializable{
-    lateinit var mymangas:List<Manga>
+    @ColumnInfo(name = "password")
+    var password: String,
+    @ColumnInfo(name = "mybooks")
+    var mybooks: String
+){
+    @PrimaryKey(autoGenerate = true)
+    var id: Long = 0
 }

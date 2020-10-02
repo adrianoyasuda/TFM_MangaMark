@@ -56,7 +56,7 @@ class LoginActivity : AppCompatActivity() {
         Toast.makeText(applicationContext, "Login ou Senha Invalidos", Toast.LENGTH_LONG).show()
     }
     fun pass(id : Long){
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, ListActivity::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
     }

@@ -33,7 +33,7 @@
             android:ellipsize="end"
             android:maxLines="1"
 
-            android:text="TextView"
+            android:text="@string/textview"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
@@ -53,13 +53,14 @@
             app:layout_constraintHorizontal_bias="0.041"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/cover" />
+            app:srcCompat="@drawable/cover"
+            android:contentDescription="@string/deafult_img" />
 
         <TextView
             android:id="@+id/txt_n_capt"
             android:layout_width="55dp"
             android:layout_height="17dp"
-            android:text="TextView"
+            android:text="@string/textview"
             app:layout_constraintBottom_toBottomOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="@+id/txt_lbManga_Author"
             app:layout_constraintHorizontal_bias="0.347"
@@ -71,7 +72,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Capitulos:"
+            android:text="@string/capitulos"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView5"
@@ -83,22 +84,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Autor:"
+            android:text="@string/autor"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             app:layout_constraintStart_toStartOf="@+id/txt_lbManga_Title"
             app:layout_constraintTop_toBottomOf="@+id/txt_lbManga_Title" />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/add_my_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="Add"
+            android:text="@string/add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/img_cover_default"
-            app:layout_constraintVertical_bias="0.483" />
+            app:layout_constraintVertical_bias="0.483"
+            app:useMaterialThemeColors="false" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

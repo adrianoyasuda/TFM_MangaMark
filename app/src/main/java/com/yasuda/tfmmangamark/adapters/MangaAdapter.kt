@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.yasuda.tfmmangamark.R
 import com.yasuda.tfmmangamark.model.Manga
+import com.yasuda.tfmmangamark.model.User
 import com.yasuda.tfmmangamark.util.MangaServiceGenerator
 import kotlinx.android.synthetic.main.item_manga.view.*
 import retrofit2.Call
@@ -14,11 +15,12 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class MangaAdapter(private val listener: MangaAdapterListener) :
+class MangaAdapter(
+                private val listener: MangaAdapterListener,
+                ) :
     RecyclerView.Adapter<MangaAdapter.ViewHolder>() {
 
-
-    private var books = mutableListOf<Manga>()
+    private var mangas = mutableListOf<Manga>()
     private val service = MangaServiceGenerator.getService()
 
     init {
@@ -26,11 +28,12 @@ class MangaAdapter(private val listener: MangaAdapterListener) :
             override fun onFailure(call: Call<List<Manga>>, t: Throwable) {}
 
             override fun onResponse(call: Call<List<Manga>>, response: Response<List<Manga>>) {
-                books = response.body()!!.toMutableList()
+                mangas = response.body()!!.toMutableList()
                 notifyDataSetChanged()
             }
         })
     }
+
 
     override fun getItemViewType(position: Int) = R.layout.item_manga
 
@@ -41,10 +44,10 @@ class MangaAdapter(private val listener: MangaAdapterListener) :
                 .inflate(viewType, parent, false)
         )
 
-    override fun getItemCount() = books.size
+    override fun getItemCount() = mangas.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val book = books[position]
+        val book = mangas[position]
         holder.fillView(book)
     }
 
@@ -58,7 +61,15 @@ class MangaAdapter(private val listener: MangaAdapterListener) :
             itemView.setOnClickListener {
                 listener.onBookSelected(manga)
             }
+
+            itemView.add_my_list?.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    println("add to bookmark")
+                }
+                else{
+                    println("else")
+                }
+            }
         }
     }
-
 }
