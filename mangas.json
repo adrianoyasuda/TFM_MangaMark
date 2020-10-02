@@ -1,0 +1,494 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "Yasuda",
+      "password": "123",
+      "mybooks": "2,3,4,1"
+    },
+    {
+      "id": 2,
+      "login": "Tafarel",
+      "password": "1234",
+      "mybooks": "1,2,3,"
+    }
+  ],
+  "mangas": [
+    {
+      "id": 1,
+      "cover": "https://i.imgur.com/S9g4MoS.jpg",
+      "title": "One Piece",
+      "author": "Oda Eiichiro",
+      "publisher": "Shonen Jump",
+      "year": 1997,
+      "edition": 991
+    },
+    {
+      "id": 2,
+      "cover": "https://i.imgur.com/Zv4Gt9A.png",
+      "title": "One Punch-Man",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 3,
+      "cover": "https://i.imgur.com/i4riNob.jpg",
+      "title": "Solo Leveling",
+      "author": "Sung-Lak Jang",
+      "publisher": "WebComics",
+      "year": 2018,
+      "edition": 121
+    },
+    {
+      "id": 4,
+      "cover": "https://legendofthegoldenwind.files.wordpress.com/2019/01/yellowcover.jpg?w=1400",
+      "title": "Naruto",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 5,
+      "cover": "https://preview.redd.it/nfpwn64i9cc21.png?auto=webp&s=a962a50d841558fd9ccb0514c2915afd9fde53e8",
+      "title": "Boku no Hero",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 6,
+      "cover": "https://i.pinimg.com/originals/09/6f/29/096f29ac378d3700b4a9b0e94107280e.jpg",
+      "title": "Black Clover",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 7,
+      "cover": "https://kbimages1-a.akamaihd.net/32b107ac-44c1-4ca0-a4de-7b4c0c8842e1/1200/1200/False/400nktu4fzaaMxVMcyCpVQ.jpg",
+      "title": "Goblin Slayer",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 8,
+      "cover": "https://i.pinimg.com/originals/78/ad/f6/78adf6ba866913b849f35f97f745b4c7.jpg",
+      "title": "Bleach",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 9,
+      "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327587158l/10135417.jpg",
+      "title": "Bakuman",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 10,
+      "cover": "https://i2.wp.com/cdn2.supermangas.site/img/manga/23682/3953998/1.jpg?v=1",
+      "title": "Tate no Yuusha",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 11,
+      "cover": "https://vignette.wikia.nocookie.net/kimetsu-no-yaiba/images/2/27/Kimetsu_no_Yaiba_V10.png/revision/latest?cb=20190628033548",
+      "title": "Kimetsu no Yaiba",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    },
+    {
+      "id": 11,
+      "cover": "https://img-host.filestatic2.xyz/mangas_files/tokyo-ghoulre/image_tokyo-ghoulre_full.webp",
+      "title": "Tokyo Ghoul",
+      "author": "One",
+      "publisher": "Shonen Jump",
+      "year": 2012,
+      "edition": 169
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "7"
+        },
+        {
+          "title": "8"
+        },
+        {
+          "title": "9"
+        },
+        {
+          "title": "10"
+        },
+        {
+          "title": "11"
+        },
+        {
+          "title": "12"
+        },
+        {
+          "title": "13"
+        },
+        {
+          "title": "14"
+        },
+        {
+          "title": "15"
+        },
+        {
+          "title": "16"
+        },
+        {
+          "title": "17"
+        },
+        {
+          "title": "18"
+        },
+        {
+          "title": "19"
+        },
+        {
+          "title": "20"
+        },
+        {
+          "title": "21"
+        },
+        {
+          "title": "991"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "7"
+        },
+        {
+          "title": "8"
+        },
+        {
+          "title": "9"
+        },
+        {
+          "title": "121"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "chapters": [
+        {
+          "title": "1"
+        },
+        {
+          "title": "2"
+        },
+        {
+          "title": "3"
+        },
+        {
+          "title": "4"
+        },
+        {
+          "title": "5"
+        },
+        {
+          "title": "6"
+        },
+        {
+          "title": "169"
+        }
+      ]
+    }
+  ]
+}
