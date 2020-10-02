@@ -4,7 +4,7 @@
 MangaMark é um Bookmark de Mangás, que possui uma biblioteca com uma lista de mangás possibilitando o usuario a adiciona-lá a sua lista, para assim acompanhar os mángas que estão sendo lidos.
 
 
-##Implementations
+## Implementations
 
    def room_version = "2.2.5"
    implementation "androidx.room:room-runtime:$room_version"
