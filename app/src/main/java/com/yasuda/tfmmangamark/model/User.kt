@@ -14,5 +14,5 @@ data class User(
     var mybooks: String
 ){
     @PrimaryKey(autoGenerate = true)
-    var id: Long = 0
+    var id: Long = 1
 }

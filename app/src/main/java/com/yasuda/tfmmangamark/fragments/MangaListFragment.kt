@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.Room
 import com.yasuda.tfmmangamark.R
 import com.yasuda.tfmmangamark.adapters.MangaAdapter
 import com.yasuda.tfmmangamark.adapters.MangaAdapterListener
+import com.yasuda.tfmmangamark.db.AppDatabase
 import com.yasuda.tfmmangamark.model.Manga
 import com.yasuda.tfmmangamark.model.User
 import com.yasuda.tfmmangamark.util.MangaServiceGenerator
@@ -62,5 +64,4 @@ class MangaListFragment() : Fragment(),
             override fun onResponse(call: Call<User>, response: Response<User>) {}
         })
     }
-
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">ログイン</string>
+    <string name="password">"パスワード "</string>
+    <string name="please_enter_your_information_to_register">登録するには情報を入力してください</string>
+    <string name="register">登録</string>
+    <string name="logout">ログアウト</string>
+    <string name="bookmark">ブックマーク</string>
+    <string name="list">リスト</string>
+    <string name="add">追加</string>
+    <string name="autor">著者：</string>
+    <string name="capitulos">"章： "</string>
+</resources>

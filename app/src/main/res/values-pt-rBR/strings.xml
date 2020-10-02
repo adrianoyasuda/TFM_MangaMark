@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Logar</string>
+    <string name="capitulos">Capitulos:</string>
+    <string name="autor">Autor</string>
+    <string name="add">Add</string>
+    <string name="list">Lista</string>
+    <string name="bookmark">BookMark</string>
+    <string name="logout">Sair</string>
+    <string name="register">Registrar</string>
+    <string name="please_enter_your_information_to_register">Insira suas informações para se registrar</string>
+    <string name="password">Senha</string>
+</resources>

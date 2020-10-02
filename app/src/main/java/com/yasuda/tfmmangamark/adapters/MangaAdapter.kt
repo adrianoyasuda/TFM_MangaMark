@@ -14,10 +14,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class MangaAdapter(
-                private val listener: MangaAdapterListener,
-                ) :
+    private val listener: MangaAdapterListener,
+) :
     RecyclerView.Adapter<MangaAdapter.ViewHolder>() {
 
     private var mangas = mutableListOf<Manga>()
@@ -64,10 +63,14 @@ class MangaAdapter(
 
             itemView.add_my_list?.setOnCheckedChangeListener { _, isChecked ->
                 if (isChecked) {
-                    println("add to bookmark")
+                    val bookid = manga.id
+                    val user = User("Yasuda","123","3,4,${bookid}")
+                    listener.userUpdate(user)
                 }
                 else{
-                    println("else")
+                    val bookid = manga.id
+                    val user = User("Yasuda","123","2,3,4,${bookid}")
+                    listener.userUpdate(user)
                 }
             }
         }

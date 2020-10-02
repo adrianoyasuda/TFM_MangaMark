@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Авторизоваться</string>
+    <string name="add">Add</string>
+    <string name="bookmark">BookMark</string>
+    <string name="password">пароль</string>
+    <string name="please_enter_your_information_to_register">Пожалуйста, введите вашу информацию для регистрации</string>
+    <string name="register">регистр</string>
+    <string name="logout">Выйти</string>
+    <string name="list">Список</string>
+    <string name="autor">Автор:</string>
+    <string name="capitulos">Главы:</string>
+</resources>

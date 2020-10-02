@@ -22,6 +22,7 @@ class ListActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_item_bookmark -> {
+
                 val intent = Intent(this, BookmarkActivity::class.java)
                 val id = intent.getSerializableExtra("id")
                 intent.putExtra("id", id)
@@ -55,5 +56,6 @@ class ListActivity : AppCompatActivity() {
         @Suppress("UNSAFE_CALL_ON_PARTIALLY_DEFINED_RESOURCE")
         bottomNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
+
 
 }
